@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import brandLogo from "@/assets/shair-trip-home-page/download.webp";
 import Image from "next/image";
 import Link from "next/link";
+import Section from "../section/Section";
 
 const NavBar = () => {
   const [isFixed, setIsFixed] = useState(false);
@@ -25,7 +26,7 @@ const NavBar = () => {
   }, []);
   return (
     <div>
-      <div className="md:max-w-screen-xl xl:max-screen-2xl  mx-auto py-2 ">
+      <Section>
         <div
           className={`${
             isFixed
@@ -154,7 +155,7 @@ const NavBar = () => {
             </button>
           </div>
         </div>
-      </div>
+      </Section>
     </div>
   );
 };
