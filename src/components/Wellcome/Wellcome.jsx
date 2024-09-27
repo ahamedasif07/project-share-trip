@@ -9,6 +9,9 @@ import { TbDeviceMobileCheck } from "react-icons/tb";
 import { MdOutlineEventNote } from "react-icons/md";
 
 const Wellcome = () => {
+  const objects = {
+    logo: FaPlaneDeparture,
+  };
   return (
     <div>
       <Section>
@@ -17,7 +20,7 @@ const Wellcome = () => {
             <div className="group inline-block ">
               <h2 className="flex gap-2 group-hover:border-b-2 text-[11px] text-gray-600 font-semibold group-hover:border-yellow-500 items-center px-4 transition-all duration-300 ease-in-out py-4">
                 <span className="text-[22px] text-gray-700">
-                  <FaPlaneDeparture />
+                  {objects.flightLogo}
                 </span>
                 Flight
               </h2>
